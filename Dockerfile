@@ -1,5 +1,5 @@
 # richarvey/nginx-php-fpmをベースとする
-FROM richarvey/nginx-php-fpm:latest
+FROM richarvey/nginx-php-fpm:3.1.6
 
 COPY . .
 
@@ -19,3 +19,4 @@ ENV LOG_CHANNEL stderr
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 CMD ["/start.sh"]
+
